@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{.Title}}</title>
+</head>
+
+<body>
+  Name : {{.Name}}<br/>
+  {{with .Address}}
+  Address Street : {{.Street}}<br/>
+  Address City : {{.City}}<br/>
+  {{else}}
+  Tidak Punya Alamat<br/>
+  {{end}}
+</body>
+
+</html>
